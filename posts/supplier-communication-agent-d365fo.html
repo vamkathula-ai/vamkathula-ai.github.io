@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Supplier Communication Agent in D365 Supply Chain Management</title>
+  <title>Exploring Supplier Communication Agent in D365 Supply Chain Management</title>
 
-  <!-- SEO BASICS -->
-  <meta name="description" content="Step-by-step guide to Supplier Communication Agent setup in D365 Supply Chain Management...">
-  <meta name="keywords" content="D365FO, Supplier Communication Agent, D365 Supply Chain Management, Copilot, Agent Management">
+  <!-- SEO -->
+  <meta name="description" content="Step-by-step guide to configuring Supplier Communication Agent in D365 Supply Chain Management, including prerequisites, Copilot versions, licenses, and security roles.">
+  <meta name="keywords" content="D365FO, Supplier Communication Agent, Copilot, D365 Supply Chain Management, Agent Management">
   <meta name="author" content="Venkat">
 
   <style>
@@ -14,7 +14,7 @@
       font-family: "Segoe UI", sans-serif;
       background: #ffffff;
       color: #222;
-      max-width: 900px;
+      max-width: 920px;
       margin: auto;
       padding: 40px 20px;
       line-height: 1.8;
@@ -26,114 +26,179 @@
       color: #2c5364;
       text-decoration: none;
     }
-    a:hover {
-      text-decoration: underline;
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    .figure {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 30px;
     }
     .meta {
       color: #666;
       font-size: 0.9rem;
       margin-bottom: 30px;
     }
-    .back {
-      margin-bottom: 20px;
-      display: inline-block;
-    }
-    ul {
-      margin-left: 20px;
-    }
     .highlight {
       background: #f4f7f8;
       padding: 15px;
       border-left: 4px solid #2c5364;
-      margin: 20px 0;
+      margin: 25px 0;
     }
   </style>
 </head>
 
 <body>
 
-  <a class="back" href="../articles.html">← Back to Articles</a>
+<a href="../articles.html">← Back to Articles</a>
 
-  <h1>Exploring Supplier Communication Agent in D365 Supply Chain Management</h1>
+<h1>Exploring Supplier Communication Agent in D365 Supply Chain Management</h1>
 
-  <div class="meta">
-    <p>✍️ Written by Venkat<br>
-       📅 Published: January 2026 · ⏱️ 5 min read
-    </p>
-  </div>
+<div class="meta">
+  ✍️ Venkat · 📅 January 2026 · ⏱️ 8 min read
+</div>
 
-  <p>
-    Microsoft is gradually introducing agent-based experiences inside
-    Dynamics 365 Supply Chain Management. One such capability is the
-    <strong>Supplier Communication Agent</strong>, which enables intelligent,
-    automated interactions with suppliers.
-  </p>
+<p>
+Microsoft is steadily introducing agent-based experiences inside Dynamics 365
+Supply Chain Management. One such capability is the <strong>Supplier Communication Agent</strong>,
+which enables automated, AI-assisted interactions between organizations and suppliers.
+</p>
 
-  <h2>Prerequisites</h2>
-  <p>Before setting up the Supplier Communication Agent, ensure the following:</p>
+<img src="../images/supplier-communication-agent/sca-01-overview.png" alt="Supplier Communication Agent overview">
+<div class="figure">Figure 1: Supplier Communication Agent overview</div>
 
-  <ul>
-    <li>D365 Supply Chain Management version <strong>10.0.44 or later</strong></li>
-    <li>Required features enabled in Feature Management</li>
-    <li>Latest Copilot components installed</li>
-  </ul>
+<h2>Immersive Home & Agent Management</h2>
 
-  <div class="highlight">
-    <strong>Required Features:</strong>
-    <ul>
-      <li>Immersive Home</li>
-      <li>Agent Management</li>
-      <li>Supplier Communication Agent</li>
-    </ul>
-  </div>
+<img src="../images/supplier-communication-agent/sca-02-immersive-home.png" alt="Immersive Home in D365 SCM">
+<div class="figure">Figure 2: Immersive Home experience</div>
 
-  <h2>Copilot Versions</h2>
-  <ul>
-    <li>Copilot for Finance and Operations Apps (v1.0.3048.2 or later)</li>
-    <li>Copilot in D365 Supply Chain Management (v1.1.03071.1 or later)</li>
-  </ul>
+<img src="../images/supplier-communication-agent/sca-03-agent-management-menu.png" alt="Agent Management menu">
+<div class="figure">Figure 3: Agent Management navigation</div>
 
-  <h2>Set Up Agent Identity</h2>
-  <p>
-    It is recommended to create a <strong>dedicated agent identity</strong>
-    instead of using a personal user account.
-  </p>
+<h2>Prerequisites</h2>
 
-  <h3>Required Licenses</h3>
-  <ul>
-    <li>Power Apps Premium</li>
-    <li>Power Automate Premium</li>
-    <li>D365 Supply Chain Management</li>
-  </ul>
+<p>Before setting up the Supplier Communication Agent, ensure the following prerequisites are met:</p>
 
-  <h3>Security Roles</h3>
+<ul>
+  <li>D365 Supply Chain Management version <strong>10.0.44 or later</strong></li>
+  <li>Required features enabled in Feature Management</li>
+  <li>Latest Copilot components installed</li>
+</ul>
 
-  <p><strong>Dataverse:</strong></p>
-  <ul>
-    <li>Finance and Operations Basic User</li>
-    <li>Supplier Communications Agent</li>
-    <li>Environment Maker</li>
-  </ul>
+<h2>Feature Management Setup</h2>
 
-  <p><strong>D365 Finance & Operations:</strong></p>
-  <ul>
-    <li>Supplier Communications Agent</li>
-    <li>System User</li>
-  </ul>
+<img src="../images/supplier-communication-agent/sca-04-feature-management-search.png" alt="Feature Management search">
+<div class="figure">Figure 4: Feature Management search</div>
 
-  <h2>Why This Matters</h2>
-  <p>
-    By introducing supplier-facing agents, organizations can reduce manual
-    follow-ups, improve communication consistency, and prepare their ERP
-    systems for AI-driven workflows.
-  </p>
+<img src="../images/supplier-communication-agent/sca-05-enable-agent-management.png" alt="Enable Agent Management">
+<div class="figure">Figure 5: Agent Management feature enabled</div>
 
-  <h2>Final Thoughts</h2>
-  <p>
-    Supplier Communication Agent is an early but important step toward
-    agentic ERP systems. As Microsoft expands Copilot and agent capabilities,
-    this area will become critical for scalable supply chain operations.
-  </p>
+<img src="../images/supplier-communication-agent/sca-06-enable-supplier-communication-agent.png" alt="Enable Supplier Communication Agent">
+<div class="figure">Figure 6: Supplier Communication Agent feature enabled</div>
+
+<h2>Copilot Version Validation</h2>
+
+<img src="../images/supplier-communication-agent/sca-07-copilot-version-finance-ops.png" alt="Copilot Finance and Operations version">
+<div class="figure">Figure 7: Copilot for Finance & Operations version</div>
+
+<img src="../images/supplier-communication-agent/sca-08-copilot-version-scm.png" alt="Copilot SCM version">
+<div class="figure">Figure 8: Copilot version in Supply Chain Management</div>
+
+<h2>Agent Identity Setup</h2>
+
+<p>
+It is recommended to create a <strong>dedicated agent identity</strong> rather than using
+a personal user account.
+</p>
+
+<img src="../images/supplier-communication-agent/sca-09-agent-user-creation.png" alt="Agent user creation">
+<div class="figure">Figure 9: Agent identity creation</div>
+
+<img src="../images/supplier-communication-agent/sca-10-agent-user-details.png" alt="Agent user details">
+<div class="figure">Figure 10: Agent user details</div>
+
+<h2>License Assignment</h2>
+
+<img src="../images/supplier-communication-agent/sca-11-powerapps-premium-license.png" alt="Power Apps Premium license">
+<div class="figure">Figure 11: Power Apps Premium license</div>
+
+<img src="../images/supplier-communication-agent/sca-12-powerautomate-premium-license.png" alt="Power Automate Premium license">
+<div class="figure">Figure 12: Power Automate Premium license</div>
+
+<img src="../images/supplier-communication-agent/sca-13-d365-scm-license.png" alt="D365 SCM license">
+<div class="figure">Figure 13: D365 Supply Chain Management license</div>
+
+<h2>Security Roles – Dataverse</h2>
+
+<img src="../images/supplier-communication-agent/sca-14-dataverse-basic-user-role.png" alt="FO Basic User role">
+<div class="figure">Figure 14: Finance and Operations Basic User role</div>
+
+<img src="../images/supplier-communication-agent/sca-15-dataverse-supplier-agent-role.png" alt="Supplier Communications Agent role">
+<div class="figure">Figure 15: Supplier Communications Agent role</div>
+
+<img src="../images/supplier-communication-agent/sca-16-dataverse-environment-maker.png" alt="Environment Maker role">
+<div class="figure">Figure 16: Environment Maker role</div>
+
+<h2>Security Roles – D365 Finance & Operations</h2>
+
+<img src="../images/supplier-communication-agent/sca-17-d365fo-system-user.png" alt="System User role">
+<div class="figure">Figure 17: System User role</div>
+
+<img src="../images/supplier-communication-agent/sca-18-d365fo-supplier-agent-role.png" alt="Supplier Agent role">
+<div class="figure">Figure 18: Supplier Communications Agent role</div>
+
+<h2>Agent Configuration & Communication Flow</h2>
+
+<img src="../images/supplier-communication-agent/sca-19-agent-configuration-overview.png" alt="Agent configuration overview">
+<div class="figure">Figure 19: Agent configuration overview</div>
+
+<img src="../images/supplier-communication-agent/sca-20-agent-channel-setup.png" alt="Agent channel setup">
+<div class="figure">Figure 20: Agent channel setup</div>
+
+<img src="../images/supplier-communication-agent/sca-21-agent-connection-details.png" alt="Agent connection details">
+<div class="figure">Figure 21: Agent connection details</div>
+
+<img src="../images/supplier-communication-agent/sca-22-supplier-message-trigger.png" alt="Supplier message trigger">
+<div class="figure">Figure 22: Supplier message trigger</div>
+
+<img src="../images/supplier-communication-agent/sca-23-supplier-response-screen.png" alt="Supplier response screen">
+<div class="figure">Figure 23: Supplier response</div>
+
+<img src="../images/supplier-communication-agent/sca-24-agent-response-preview.png" alt="Agent response preview">
+<div class="figure">Figure 24: Agent response preview</div>
+
+<h2>Monitoring & Validation</h2>
+
+<img src="../images/supplier-communication-agent/sca-25-agent-monitoring-dashboard.png" alt="Agent monitoring dashboard">
+<div class="figure">Figure 25: Agent monitoring dashboard</div>
+
+<img src="../images/supplier-communication-agent/sca-26-agent-activity-log.png" alt="Agent activity log">
+<div class="figure">Figure 26: Agent activity log</div>
+
+<img src="../images/supplier-communication-agent/sca-27-common-error-screen.png" alt="Common error screen">
+<div class="figure">Figure 27: Common errors</div>
+
+<img src="../images/supplier-communication-agent/sca-28-permission-error.png" alt="Permission error">
+<div class="figure">Figure 28: Permission error</div>
+
+<img src="../images/supplier-communication-agent/sca-29-successful-message-flow.png" alt="Successful message flow">
+<div class="figure">Figure 29: Successful message flow</div>
+
+<img src="../images/supplier-communication-agent/sca-30-end-to-end-validation.png" alt="End to end validation">
+<div class="figure">Figure 30: End-to-end validation</div>
+
+<img src="../images/supplier-communication-agent/sca-31-summary-screen.png" alt="Summary screen">
+<div class="figure">Figure 31: Summary</div>
+
+<h2>Final Thoughts</h2>
+
+<p>
+Supplier Communication Agent is an important step toward agentic ERP systems.
+As Microsoft expands Copilot and agent capabilities, this feature will play
+a critical role in scalable, automated supplier collaboration.
+</p>
 
 </body>
 </html>
