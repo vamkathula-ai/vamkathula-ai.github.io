@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Venkat | AI & D365FO</title>
 
   <style>
+    * {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: "Segoe UI", Tahoma, sans-serif;
       background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: #ffffff;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+      padding: 15px 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      color: #ffcc70;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .container {
@@ -21,12 +56,16 @@
 
     header {
       text-align: center;
-      margin-bottom: 50px;
+      padding: 60px 20px;
     }
 
     header h1 {
-      font-size: 3rem;
+      font-size: 3.2rem;
       margin-bottom: 10px;
+    }
+
+    header span {
+      color: #ffcc70;
     }
 
     header p {
@@ -34,11 +73,29 @@
       opacity: 0.9;
     }
 
+    .cta {
+      margin-top: 25px;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: #ffcc70;
+      color: #000;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .cta a:hover {
+      opacity: 0.85;
+    }
+
     section {
       background: rgba(255, 255, 255, 0.08);
       padding: 30px;
-      border-radius: 12px;
-      margin-bottom: 30px;
+      border-radius: 14px;
+      margin-bottom: 35px;
     }
 
     section h2 {
@@ -46,86 +103,84 @@
       color: #ffcc70;
     }
 
-    ul {
-      padding-left: 20px;
-    }
-
     ul li {
       margin-bottom: 8px;
     }
 
-    .projects li {
-      margin-bottom: 12px;
-    }
-
     footer {
       text-align: center;
-      margin-top: 40px;
+      margin: 50px 0 20px;
       font-size: 0.9rem;
       opacity: 0.8;
-    }
-
-    a {
-      color: #ffcc70;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Hello 👋 I’m <span>Venkat</span></h1>
+    <p>AI Enthusiast | D365 Finance & Operations | Tech Explorer</p>
+
+    <div class="cta">
+      <a href="#contact">Contact Me</a>
+    </div>
+  </header>
+
   <div class="container">
 
-    <header>
-      <h1>Hello 👋 I’m Venkat</h1>
-      <p>AI Enthusiast | D365 Finance & Operations | Tech Explorer</p>
-    </header>
-
-    <section>
+    <section id="about">
       <h2>About Me</h2>
       <p>
         I’m a D365 Finance & Operations Technical Lead exploring Artificial Intelligence
-        and automation. I enjoy building smart solutions that simplify business
-        processes and improve productivity.
+        and automation. I love building intelligent tools that simplify work and
+        improve business efficiency.
       </p>
     </section>
 
-    <section>
+    <section id="skills">
       <h2>Skills</h2>
       <ul>
         <li>D365 Finance & Operations (X++, Integrations)</li>
         <li>AI & LLM Concepts</li>
-        <li>Python (Beginner → Growing)</li>
+        <li>Python (Growing)</li>
         <li>Azure & Automation</li>
-        <li>GitHub & DevOps Basics</li>
+        <li>GitHub & DevOps</li>
       </ul>
     </section>
 
-    <section>
+    <section id="projects">
       <h2>Projects</h2>
-      <ul class="projects">
-        <li>🤖 AI-powered Excel validation tool for D365FO</li>
-        <li>📊 Smart reporting & summaries using LLMs</li>
-        <li>🍽️ Food business automation ideas (ordering, coupons)</li>
+      <ul>
+        <li>🤖 AI-based Excel validation & import for D365FO</li>
+        <li>📊 Smart summaries & reporting using LLMs</li>
         <li>🧠 Personal AI assistant for work & finance tracking</li>
+        <li>🍽️ Food business automation ideas</li>
       </ul>
     </section>
 
-    <section>
+    <section id="contact">
       <h2>Contact</h2>
       <p>
-        📧 Email: <a href="mailto:yourmail@example.com">yourmail@example.com</a><br>
-        💼 GitHub: <a href="https://github.com/vamkathula-ai" target="_blank">vamkathula-ai</a>
+        📧 Email: <a href="mailto:yourmail@example.com" style="color:#ffcc70;">yourmail@example.com</a><br><br>
+        💼 GitHub: <a href="https://github.com/vamkathula-ai" target="_blank" style="color:#ffcc70;">vamkathula-ai</a>
       </p>
     </section>
 
-    <footer>
-      © 2026 Venkat • Built with ❤️ on GitHub Pages 🚀
-    </footer>
-
   </div>
+
+  <footer>
+    © 2026 Venkat • Built with ❤️ on GitHub Pages
+  </footer>
+
 </body>
 </html>
